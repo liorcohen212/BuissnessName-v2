@@ -8,4 +8,6 @@ full link mongodb://127.0.0.1:27017/BussinessPlace
 port 8009
 before starting put inside the node modules 
 npm start to start the website
+phone number:0532799719
+email: Liorcohen212@gmail.com
 
