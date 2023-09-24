@@ -35,12 +35,6 @@ const MyCards: FunctionComponent<MyCardsProps> = ({cardInfo, setCardInfo ,userIn
                 .catch((err) => { console.log(err);});
         }};
     useEffect(() => {
-        // getFavorites(userInfo._id).then((res) => {
-        // let userFavorites = res.data.find((fav: any) => fav.userId === userInfo._id);
-        // let defaultCardIds: string[] = userFavorites?.cards.map((card: any) => card._id) || [];
-        // setFavorites(defaultCardIds)
-        // }).catch((err) => console.log(err));
-        
         getCardsByOwner()
         .then((res) => setCards(res.data))
         .catch((err) => console.log(err));
